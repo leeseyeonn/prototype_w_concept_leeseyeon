@@ -1,0 +1,21 @@
+
+$font-size-12:0.75rem;
+$font-size-14:0.875rem;
+$font-size-16:1rem;
+$font-size-18:1.125rem;
+$font-size-20:1.25rem;
+$font-size-24:1.5rem;
+$font-size-30:1.875rem;
+
+$font-weight-m:500;
+$font-weight-sb:600;
+$font-weight-b:700;
+
+$color-gray-2:#666;
+$color-point:#ff4600;
+
+@mixin check1 {border:1px solid red;}
+@mixin check2 {border:2px solid blue;}
+@mixin flex-row {display:flex;}
+@mixin margin-t10 {margin-top:10px;}
+@mixin margin-b10 {margin-bottom:10px;}

@@ -1,0 +1,133 @@
+@use './common.scss' as *;
+/* ------------------기본페이지 */
+
+body {margin: 120px 0; }
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    gap:50px;
+    width: 100%;
+    padding: 0 30px;
+    max-width: 1420px;
+    margin: 0 auto;
+
+    h2 {
+        font-size: $font-size-20;
+        font-weight: $font-weight-m;
+        @include margin-b10;
+    }
+
+    h3 {
+        font-size: $font-size-30;
+        font-weight: $font-weight-sb;
+        @include margin-t10;
+    }
+
+    .text {
+        @include margin-t10;
+        @include margin-b10;
+        color: $color-gray-2;
+        font-size: $font-size-14;
+        font-weight: $font-weight-m;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .title {
+        @include margin-t10;
+        @include flex-row;
+        justify-content: space-between;
+
+        .brand {
+            font-size: $font-size-14;
+            font-weight: $font-weight-b;
+        }
+
+        img {}
+    }
+
+    .rate {
+        font-size: $font-size-20;
+        font-weight: $font-weight-sb;
+        color: $color-point;
+    }
+
+    .cost {
+        font-size: $font-size-20;
+        font-weight: $font-weight-sb;
+        margin-left: 3px;
+    }
+
+    .row1_products {
+        display: flex;
+        gap: 20px;
+    }
+    .row2_products {
+        display: flex;
+        
+        justify-content: space-between;
+    }
+
+    .products {
+        
+        .pd {
+            width: 206px;
+            .thumb {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .row1 {
+        width: 100%;
+        
+        .main_20 {
+            width: 50%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            
+
+            .main_20_title {
+                width: max-content;
+            }
+        }
+
+        .row1_wrap {
+            display: flex;
+            gap: 20px;
+            /* align-items: flex-start;    */
+
+            .banner {
+                aspect-ratio: 5/5.5;
+                background-image: url(/images/001.png);
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-flow: column;
+                align-items: flex-end;
+                img {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+
+    .row2 {
+        .row2_title {
+            @include flex-row;
+            justify-content: space-between;
+        }
+
+        .products {
+            width: 100%;
+        }
+    }
+}
